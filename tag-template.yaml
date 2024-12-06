@@ -1,0 +1,15 @@
+schema: "http://g-six.com/node-js/0.0.0"
+alias:
+  - alias-url: "/tag-2025/assets"
+    alias-path: "~/www/2025/static/assets"
+  - alias-url: "/tag-2025/js"
+    alias-path: "~/www/2025/src/javascript"
+
+features:
+  - "fixing the typo a"
+  - "January 2025 -"
+  - "they said \"good job\""
+  - "0"
+
+comment: "maybe"
+date: "5/5/2025"

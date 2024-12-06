@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "bashdb",
+            "request": "launch",
+            "name": "src/scripts/tag.bash",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/src/scripts/tag.bash",
+            "args": ["tag-01","tag-template.yaml"],
+            "pathBash": "/opt/homebrew/bin/bash",
+            "trace": true
+        },
+        {
+            "name": "scripts/tag.js",
+            "program": "${workspaceFolder}/scripts/tag.js",
+            "args": ["tag-01", "tag-template.yaml"],
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "/Users/gsix/.nvm/versions/node/v18.20.4/bin/node",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "skipFiles": [
+                "<node_internals>/**",
+                "**/node_modules/**"
+            ]
+        },
+        {
+            "name": "src/scripts/serialize.js",
+            "program": "${workspaceFolder}/src/scripts/serialize.js",
+            "args": ["tag-template.yaml"],
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "/Users/gsix/.nvm/versions/node/v18.20.4/bin/node",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "skipFiles": [
+                "<node_internals>/**",
+                "**/node_modules/**"
+            ]
+        }
+    ]
+}
